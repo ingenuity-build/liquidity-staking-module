@@ -159,3 +159,5 @@ format:
 
 benchmark:
 	@go test -mod=readonly -bench=. ./...
+
+.PHONY: build
