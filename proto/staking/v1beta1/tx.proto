@@ -175,4 +175,6 @@ message MsgTransferTokenizeShareRecord {
   string new_owner = 3;
 }
 
-message MsgTransferTokenizeShareRecordResponse {}
+message MsgTransferTokenizeShareRecordResponse {
+  cosmos.base.v1beta1.Coin amount = 1 [ (gogoproto.nullable) = false ];
+}
